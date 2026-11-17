@@ -12,7 +12,6 @@ class SnakeGame {
         this.gameContainer = null;
         this.difficultyElement = null;
         this.gameSpeed = 100; // Default medium speed
-        this.difficulty = 'medium'; // Default difficulty
         
         this.init();
     }
@@ -22,7 +21,6 @@ class SnakeGame {
         const playButton = document.getElementById('play-snake');
         const closeButton = document.getElementById('close-game');
         this.gameContainer = document.getElementById('snake-game-container');
-        const gameCanvas = document.getElementById('snake-game');
         this.scoreElement = document.getElementById('score');
         this.difficultyElement = document.getElementById('difficulty-display');
         
@@ -533,7 +531,6 @@ class SnakeGame {
     }
     
     setDifficulty(difficulty, speed) {
-        this.difficulty = difficulty;
         this.gameSpeed = speed;
         if (this.difficultyElement) {
             this.difficultyElement.textContent = `${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`;

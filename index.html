@@ -1,147 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Portale | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Michael Portale | Software Engineer</title>
+    <meta name="description" content="Software engineer in New York. Columbia CS, 2026. I build full-stack products and AI tools.">
+    <link rel="canonical" href="https://michaelportale.com/">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaelportale.com/">
+    <meta property="og:site_name" content="Michael Portale">
+    <meta property="og:title" content="Michael Portale | Software Engineer">
+    <meta property="og:description" content="Software engineer in New York. Columbia CS, 2026. I build full-stack products and AI tools.">
+    <meta property="og:image" content="https://michaelportale.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Michael Portale. Software engineer in New York. Columbia CS, 2026.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-shadow"></div>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <nav>
-        <div class="nav-logo">MP</div>
-        <div class="nav-links">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
+    <header class="bar">
+        <div class="wrap bar-inner">
+            <a class="wordmark" href="#top">Michael Portale</a>
+            <nav aria-label="Sections">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <div class="theme-toggle">
-            <i class="fas fa-moon"></i>
+    </header>
+
+    <main id="main">
+        <section class="title wrap" id="top" aria-labelledby="name">
+            <h1 id="name">Michael Portale</h1>
+            <p class="headline">Software engineer in New York. Columbia CS, 2026.</p>
+            <p class="pitch">I build <span class="nw">full-stack</span> products and AI tools, most recently as a founding engineer at Branch, an app we piloted with 250+ users.</p>
+            <ul class="title-links">
+                <li><a href="mailto:mvp2137@columbia.edu">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/michaelportale" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
+
+        <div class="wrap"><div class="title-bar" aria-hidden="true"></div></div>
+
+        <div class="pair wrap">
+        <section class="sheet" id="about" aria-labelledby="about-h">
+            <h2 id="about-h">About</h2>
+            <div class="body">
+                <p>I graduated from Columbia in May 2026 with a degree in computer science. I was a founding engineer at Branch, one of three engineers on the team. Now I'm building AI tools with Claude Code. I'm looking for a <span class="nw">full-stack</span> or product engineering role at an <span class="nw">early-stage</span> company in New York.</p>
+
+                <table class="skills">
+                    <caption>Skills</caption>
+                    <tbody>
+                        <tr><th scope="row">Languages</th><td>TypeScript, Python, Swift, SQL</td></tr>
+                        <tr><th scope="row">Frontend</th><td>React, React Native, Next.js, Tailwind</td></tr>
+                        <tr><th scope="row">Backend and data</th><td>Postgres, Supabase, row-level security</td></tr>
+                        <tr><th scope="row">AI tooling</th><td>Claude Code, Anthropic API, MCP, agent workflows</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="sheet" id="experience" aria-labelledby="experience-h">
+            <h2 id="experience-h">Experience</h2>
+            <div class="body">
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>Branch<span class="role">, Founding Engineer</span></h3>
+                        <p class="dates"><time datetime="2025-11">Nov 2025</time> to <time datetime="2026-05">May 2026</time></p>
+                    </div>
+                    <p>Community app piloted with 250+ users across 20 partner organizations.</p>
+                    <ul class="points">
+                        <li>Designed the Postgres schema for the admin portal and wrote all 17 migrations, including <span class="nw">row-level</span> security for who can see whose data.</li>
+                        <li>Built the push notification dispatcher covering 15+ event types.</li>
+                    </ul>
+                    <dl class="facts">
+                        <div><dt>Stack</dt><dd>React Native, TypeScript, Supabase, Next.js, React, Tailwind</dd></div>
+                        <div><dt>Link</dt><dd><a href="https://apps.apple.com/us/app/branch-hq/id6747823261" target="_blank" rel="noopener">App Store</a> <span class="note">Pilot ended May 2026. Groups were <span class="nw">invite-only</span> for partner orgs.</span></dd></div>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
         </div>
-    </nav>
 
-    <main>
-        <section id="home" class="section-full">
-            <div class="hero">
-                <h1 class="glitch-text">Michael Portale</h1>
-                <h2>Computer Science Student at Columbia University</h2>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse"></div>
-                <p>Scroll Down</p>
+        <section class="sheet wrap" id="projects" aria-labelledby="projects-h">
+            <h2 id="projects-h">Projects</h2>
+            <div class="body">
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>ReelInbox</h3>
+                        <p class="status">Private repo</p>
+                    </div>
+                    <p>An agent that turns videos I save from Instagram and TikTok into notes.</p>
+                    <dl class="facts">
+                        <div><dt>Stack</dt><dd>Python</dd></div>
+                    </dl>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>LocalFlow</h3>
+                        <p class="status">Private repo</p>
+                    </div>
+                    <p>A Mac dictation app that runs fully <span class="nw">on-device</span>. I tested an <span class="nw">on-device</span> LLM cleanup step and chose not to ship it.</p>
+                    <dl class="facts">
+                        <div><dt>Stack</dt><dd>Swift, <span class="nw">on-device</span> speech model</dd></div>
+                    </dl>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3>ShiftLab</h3>
+                        <p class="status"><span class="tag">In progress</span></p>
+                    </div>
+                    <p>A tool I'm building to lock down my own iPhone so distracting apps are actually removed, using Apple device supervision.</p>
+                    <dl class="facts">
+                        <div><dt>Stack</dt><dd>Python, pymobiledevice3, launchd</dd></div>
+                        <div><dt>Code</dt><dd><a href="https://github.com/michaelportale/shiftlab" target="_blank" rel="noopener">github.com/michaelportale/shiftlab</a></dd></div>
+                    </dl>
+                </article>
             </div>
         </section>
 
-        <section id="about" class="section-full">
-            <div class="section-header">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a rising senior at Columbia University studying Computer Science. I have a strong foundation in programming with a focus on Java, Python, TypeScript, HTML, CSS, and JavaScript. Some of my interests include web development, game development, and machine learning.</p>
-                </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section-full">
-            <div class="section-header">
-                <h2>Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Snake Game</h3>
-                        <p>An interactive Snake game built with HTML, CSS, and JavaScript.</p>
-                        <div class="project-actions">
-                            <button id="play-snake" class="btn btn-primary">Play Game</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="snake-game-container" class="game-container hidden">
-                    <div class="game-header">
-                        <h3>Snake Game</h3>
-                        <button id="close-game" class="btn-close" type="button" aria-label="Close game"><i class="fas fa-times"></i></button>
-                    </div>
-                    <div id="snake-game"></div>
-                    <div class="game-controls">
-                        <p>Use arrow keys to move • SPACEBAR to restart</p>
-                        <div class="game-info">
-                            <span id="score">Score: 0</span>
-                            <span id="difficulty-display">Medium</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>StrengthWise - Workout Trainer</h3>
-                        <p>A comprehensive fitness education platform with interactive quizzes, exercise database, and workout planning tools built with Flask and Python.</p>
-                        <div class="project-actions">
-                            <a href="https://workouttrainer.onrender.com/" class="btn btn-primary" target="_blank" rel="noopener">View StrengthWise</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section-full">
-            <div class="section-header">
-                <h2>Contact</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>mvp2137@columbia.edu</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/michaelportale" target="_blank" rel="noopener">GitHub</a>
-                    </div>
-                </div>
+        <section class="sheet wrap" id="contact" aria-labelledby="contact-h">
+            <h2 id="contact-h">Contact</h2>
+            <div class="body">
+                <ul class="contact">
+                    <li><a href="mailto:mvp2137@columbia.edu">mvp2137@columbia.edu</a></li>
+                    <li><a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">linkedin.com/in/mportale</a></li>
+                    <li><a href="https://github.com/michaelportale" target="_blank" rel="noopener">github.com/michaelportale</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Michael Portale. All rights reserved.</p>
-        </div>
+    <footer class="wrap foot">
+        <p>&copy; <span id="year">2026</span> Michael Portale</p>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/snake-game.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

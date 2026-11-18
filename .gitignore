@@ -4,3 +4,10 @@ node_modules/
 # Local AI-assistant configuration
 .claude/
 CLAUDE.md
+
+# Design-tool records (not served on the public site)
+PRODUCT.md
+DESIGN.md
+.impeccable/
+.taste-skill/
+.serena/

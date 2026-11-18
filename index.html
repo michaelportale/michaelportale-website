@@ -50,8 +50,6 @@
             </ul>
         </section>
 
-        <div class="wrap"><div class="title-bar" aria-hidden="true"></div></div>
-
         <div class="pair wrap">
         <section class="sheet" id="about" aria-labelledby="about-h">
             <h2 id="about-h">About</h2>
@@ -143,21 +141,15 @@
                 </article>
             </div>
         </section>
-
-        <section class="sheet wrap" id="contact" aria-labelledby="contact-h">
-            <h2 id="contact-h">Contact</h2>
-            <div class="body">
-                <ul class="contact">
-                    <li><a href="mailto:mvp2137@columbia.edu">mvp2137@columbia.edu</a></li>
-                    <li><a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">linkedin.com/in/mportale</a></li>
-                    <li><a href="https://github.com/michaelportale" target="_blank" rel="noopener">github.com/michaelportale</a></li>
-                </ul>
-            </div>
-        </section>
     </main>
 
-    <footer class="wrap foot">
-        <p>&copy; <span id="year">2026</span> Michael Portale</p>
+    <footer class="wrap foot" id="contact" aria-label="Contact">
+        <ul class="foot-links">
+            <li><a href="mailto:mvp2137@columbia.edu">mvp2137@columbia.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/mportale/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/michaelportale" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id="year">2026</span> Michael Portale</p>
     </footer>
 
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
